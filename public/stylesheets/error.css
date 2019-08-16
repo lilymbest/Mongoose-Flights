@@ -1,0 +1,39 @@
+body {
+    background-image: url("/images/404.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+}
+
+p.sad {
+    position: absolute;
+    bottom: 300px;
+    left: 435px;
+    font-size: 52px;
+}
+
+p.four {
+    position: absolute;
+    bottom: 450px;
+    left: 450px;
+    font-size: 24px;
+    color: red;
+    font-weight: bold;
+}
+
+p.emoji {
+    position: absolute;
+    bottom: 360px;
+    left: 220px;
+    font-size: 44px;
+    font-weight: bold;
+}
+
+p.heck {
+    font-size: 32px;
+}
+
+h2 {
+    color: red;
+}
+
