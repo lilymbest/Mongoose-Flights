@@ -1,10 +1,10 @@
 <%- include('../partials/header') %>
-    <table id="list">
+    <table id="list" align="center">
         <thead>
           <tr>
-            <th>Title</th>
-            <th>Departure<br>Date</th>
-            <th></th>
+            <th>Airline</th>
+            <th>Departure Date</th>
+            <th>Click for<br>details</th>
           </tr>
         </thead>
         <tbody>
@@ -12,7 +12,7 @@
             <tr>
               <td><%= f.airline %></td>
               <td><%= f.departs %></td>
-              <td><a href="/flights/<%= f._id %>">DETAILS</a></td>
+              <td class="details"><a href="/flights/<%= f._id %>" class="details">DETAILS</a></td>
             </tr>
             <% }); %>
           </tbody>

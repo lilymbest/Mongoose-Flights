@@ -5,12 +5,14 @@
   <select name="airline">
     <option value="American">American</option>
     <option value="United">United</option>
-    <option value="SW">Southwest</option>
+    <option value="Southwest">Southwest</option>
   </select>
   <label>Flight Number</label>
   <input type="text" name="flightNo" autocomplete="off">
   <label>Departure Date</label>
   <input type="datetime-local" name="date" autocomplete="off">
+  <label >Seat Number</label>
+  <input name="seat" required pattern="[A-F][1-9]\d?">
   <input type="submit" value="Add Flight">
 </form>
 
