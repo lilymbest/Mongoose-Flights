@@ -16,6 +16,25 @@
         <div>Departure Date:</div>
         <div><%= flight.departs %></div>
     </section>
+    <br><br>
+    <h2>Add Arrival Information</h2>
+    <form id="add-arrival" method="POST" action="/flights/<%= flight._id %>/details">
+    <label>Arrival Time:</label>
+    <input type="datetime-local" name="arrival" value="2019-08-14T13:30">
+    <label>Airport:</label>
+    <select name="airport">
+        <option value="SEA">SEA</option>
+        <option value="AUS">AUS</option>
+        <option value="DAL">DAL</option>
+        <option value="LAX">LAX</option>
+    </select>
+    <input type="submit" value="Add Arrival Information">
+    </form>
+    <h2>Arrival Information:</h2>
+    <% flight.destination.forEach(function(f) { %>
+      <div><span class="info">Arrival Time: </span><%= f.arrival %></div>
+      <div><span class="info">Airport: </span><%= f.airport %></div>
+      <% }); %>
 </body>
 </html>
 <%- include('../partials/footer') %>
